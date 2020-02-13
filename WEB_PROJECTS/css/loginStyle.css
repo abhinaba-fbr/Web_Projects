@@ -1,0 +1,145 @@
+/*Body--------------------------------------------------*/
+body {
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Blue-Scratched-Textured-Background.jpg);
+    background-size: 100% 200%;
+    letter-spacing: 2px;
+}
+
+/*Container------------------------------------------------*/
+.container {
+    background: rgb(40,40,40);
+    margin: 10% 30% 0 30%;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    position: relative; 
+}
+
+/*After and Before elememts-------------------------
+.container:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background: white;
+    height: 0;
+    width: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: -7px;;
+    left: -7px;
+    background: white;
+    height: 0;
+    width: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.container:hover:after {
+    width: 100%;
+    height: 7px;
+    box-shadow: 0 0 8px 2px white;
+}
+
+.container:hover:before {
+    width: 7px;
+    height: 103%;
+    box-shadow: 0 0 8px 2px white;
+}
+*/
+/*Container Top-------------------------------------------------------------*/
+.container .container-top {
+    background: rgb(40,40,40);
+    position: relative;
+}
+
+.container .container-top h1 {
+    color: rgb(50,50,50);
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+/*container Header-------------------------------*/
+.container:hover h1 {
+    color: white;
+    text-shadow: 0 0 8px white;
+}
+
+.container .container-top .alert-container {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    color: white;
+}
+/*inputs-----------------------------------------*/
+.container .container-top form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-top form input {
+    margin: 10px 10%;
+    background: rgb(50,50,50);
+    outline: none;
+    border: none;
+    height: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container .container-top form input:last-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(40,40,40);
+}
+
+.container:hover .container-top form input {
+    background: white;
+    box-shadow: 0 0 2px 2px white;
+}
+
+.container:hover .container-top form .highlight {
+    background: #c2aa6d;
+    box-shadow: 0 0 2px 2px #c2aa6d;
+}
+
+/*Container Bottom--------------------------------------------*/
+.container .container-bottom {
+    background: rgb(40,40,40);
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+.container .container-bottom:before {
+    content: "";
+    position: absolute;
+    background: white;
+    left: 20%;
+    width: 60%;
+    height: 1px;
+}
+.container .container-bottom h3 {
+    color: rgb(50,50,50);
+    text-shadow: 0 0 3px black;
+    transition: all 0.2s ease-in-out;
+}
+.container .container-bottom a {
+    color: #5a87a3;
+}
+.container:hover .container-bottom h3 {
+    color: white;
+    text-shadow: 0 0 4px white;
+}
+
+
+
+
+
+
+
+
+
+

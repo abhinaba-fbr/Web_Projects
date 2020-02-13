@@ -1,0 +1,180 @@
+/*All-------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* header container-----------------------------------------*/
+.header-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 89%;
+    height: 60px;
+    background: rgb(240,240,240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 1;
+}
+
+.header-container h2 {
+    margin-top: 12px;
+    color: rgb(0,0,50);
+    font-size: 200%;
+}
+
+.header-container #viewLabel1 {
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 55px;
+    left: -40%;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: whitesmoke;
+    display: none;
+}
+
+.header-container button {
+    background: rgb(50,50,50);
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-container button:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+/*main container-----------------------------------------*/
+.container {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+}
+
+/*Header Container--------------------------------------------*/
+.header {
+    text-align: center;
+    padding-top: 70px;
+    background: white;
+}
+.header h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;;
+}
+.header p {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+/*Keys----------------------------------------------------*/
+.keys-container {
+    background: white;
+}
+.keys-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.keys-container ul li {
+    background: rgba(80,80,80,1);
+    width: 80px;
+    height: 100px;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+.keys-container ul li p {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 37%;
+    font-size: 0.7rem;
+}
+
+.keys-container ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px 5px rgba(100,100,100,1);
+    background: rgb(20,20,20);
+}
+
+/*Effects Container----------------------------------------*/
+.effects-container {
+    position: absolute;
+    bottom: 0;
+    height: 75vh;
+    width: 94.6%;
+    margin: 0 2.7%;
+    z-index: -1;
+}
+
+.design {
+    position: absolute;
+    width: 20px;
+    top: 0;
+}
+
+
+
+/*animations-------------------------------------------------*/
+@keyframes pressed {
+    0%{
+        background: rgba(80,80,80,1);
+        box-shadow: 0 0 0 0 rgba(100,100,100,0.8);
+    }
+    50% {
+        background: rgb(40,40,40);
+        box-shadow: 0 0 20px 5px rgba(100,100,100,0.8);
+    }
+    100% {
+        background: rgba(80,80,80,0.7);
+        box-shadow: 0 0 0 0 rgba(100,100,100,0.8);
+    }
+}
+
+@keyframes drop {
+    to {
+        top: 58vh;
+        background: rgba(40,40,40,0);
+    }
+}
+
+/*for styling the dp---------------------------*/
+.log-container {
+    display: flex;
+}
+
+.log-container img {
+    margin: 8px 20px 0 0;
+    border-radius: 50%;;
+}
+
+.log-container #viewLabel2 {
+    content: "View Profile";
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    width: 82px;
+    height: 20px;
+    top: 55px;
+    left: 50px;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: whitesmoke;
+    display: none;
+}

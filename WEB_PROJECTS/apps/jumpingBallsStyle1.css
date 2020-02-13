@@ -1,0 +1,171 @@
+/*All-----------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+/* header container-----------------------------------------*/
+.header-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 89%;
+    height: 60px;
+    background: rgb(240,240,240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 1;
+}
+
+.header-container h2 {
+    margin-top: 12px;
+    color: rgb(0,0,50);
+    font-size: 200%;
+}
+
+.header-container #viewLabel1 {
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 55px;
+    left: -40%;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: whitesmoke;
+    display: none;
+}
+
+.header-container button {
+    background: rgb(50,50,50);
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-container button:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+/*Main container---------------------------------------*/
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*header------------------------------------------------*/
+.header {
+    margin-top: 100px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.header p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*Boxes------------------------------------------------------*/
+.boxes {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxes div {
+    width: 20%;
+    height: 100%;
+}
+
+.boxes #box1 {
+    background: rgb(77, 70, 54);
+}
+
+.boxes #box2 {
+    background: rgb(43, 153, 146);
+}
+
+.boxes #box3 {
+    background: rgb(40, 33, 138);
+}
+
+.boxes #box4 {
+    background: rgb(43, 186, 24);
+}
+
+.boxes #box5 {
+    background: rgb(252, 71, 86);
+}
+
+/*balls------------------------------------------*/
+.balls {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: red;
+    bottom: 0;
+    z-index: -1;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@keyframes jump {
+    0%{
+        top: 50%;
+    }
+    50%{
+        top: -200px;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
+/*for styling the dp---------------------------*/
+.log-container {
+    display: flex;
+}
+
+.log-container img {
+    margin: 8px 20px 0 0;
+    border-radius: 50%;;
+}
+
+.log-container #viewLabel2 {
+    content: "View Profile";
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    width: 82px;
+    height: 20px;
+    top: 55px;
+    left: 50px;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: whitesmoke;
+    display: none;
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: rgb(192, 255, 186);
+}
+
+/* header container-----------------------------------------*/
+.header-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 89%;
+    height: 60px;
+    background: rgb(240,240,240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 1;
+}
+
+.header-container h2 {
+    margin-top: 12px;
+    color: rgb(0,0,50);
+    font-size: 200%;
+}
+
+.header-container #viewLabel1 {
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 55px;
+    left: -40%;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: whitesmoke;
+    display: none;
+}
+
+.header-container button {
+    background: rgb(50,50,50);
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-container button:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+/*Dp Container-----------------------------------------------------*/
+.dp-container {
+    margin: 80px 0 20px 39%;
+}
+
+.dp-container input[name="remove"] {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: rgb(40,40,40);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(50,50,50);
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.dp-container input[name="remove"]:hover {
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.dp-container .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.dp-container .inputs input[name="file"] {
+    color: transparent;
+    width: 300px;
+}
+
+.dp-container .inputs input[name="file"]::-webkit-file-upload-button {
+    visibility: none;
+}
+
+.dp-container .inputs input[name="file"]::-webkit-file-upload-button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: rgb(40,40,40);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(50,50,50);
+    font-size: 1.7rem;
+    margin-top: 10px;
+    outline: none;
+}
+
+.dp-container .inputs input[name="file"]::-webkit-file-upload-button:hover {
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.dp-container .inputs input[name="upload"] {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: rgb(40,40,40);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(50,50,50);
+    font-size: 1.7rem;
+    margin-top: 10px;
+    outline: none;
+}
+
+.dp-container .inputs input[name="upload"]:hover {
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+.dp-container i {
+    position: absolute;
+    color: white;
+    background: rgba(40,40,40,0.6);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+/*alert container------------------------------------*/
+.alert-container {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(20,20,40);
+}
+
+/*info container----------------------------------------------*/
+.info-container {
+    text-align: center;
+}
+
+.info-container p {
+    color: rgb(40,40,40);
+}
+
+.info-container h1 {
+    color: rgb(0,0,50);
+    margin-top: 10px;
+}
