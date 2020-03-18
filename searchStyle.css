@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30%;
+    height: 40vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form input {
+    background: none;
+    width: 300px;
+    padding-top: 20px;
+    padding-left: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+form label {
+    position: absolute;
+    top: 18px;
+    padding-left: 2px;
+    color: rgba(70,70,70,0.7);
+    font-size: 1.2rem;;
+    transition: all 0.2s linear;
+}
+
+form i {
+    position: absolute;
+    top: 14px;
+    left: 275px;
+    text-align: center;
+    color: rgb(70,70,70);
+    cursor: pointer;
+}
+
+/*Animations and Transitions---------------------------------------*/
+form input:focus {
+    border-bottom: 3px solid blueviolet;
+}
+
+form input:focus + label {
+    transform: translateY(-18px);
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+input[type="text"]:valid + label {
+    transform: translateY(-20px);
+    font-size: 1rem;
+}
+
+form input:focus ~ i {
+    color: blueviolet;
+    font-weight: 700;
+}
+
+/*search results----------------------------------------------------*/
+.search-result {
+    background: green;
+    width: 300px;
+    margin-top: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    cursor: pointer;
+}
+
+.search-result li {
+    background: rgb(200,200,200);
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid white;
+    color: rgb(80,80,80);
+}
+
+#highlighted {
+    background: rgb(100,100,100);
+    color: white;
+}
+
+.hide {
+    display: none;
+}

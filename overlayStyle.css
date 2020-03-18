@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.container h1 {
+    background: linear-gradient(90deg,rgb(34,90,150),rgba(200,200,200,0));
+    width: 87%;
+    height: 200px;
+    margin: 20px 4%;
+    padding-left: 5%; 
+    line-height: 180px;
+    color: white;
+    font-size: 5rem;
+}
+
+.container ul {
+    list-style: none;
+    margin: 0 0 5% 0;
+    padding: 0 4%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 12px 20px;
+}
+
+.container ul img {
+    border: 1px solid gray;
+    box-shadow: 0 0 2px 2px gray;
+    height: 300px;    
+}
+
+/*Overlay Design-------------------------------------------------------*/
+.add-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(3, 3, 3, 0.8);
+    z-index: 2;
+}
+
+.add-on .vertical-img {
+    position: relative; 
+    top: 15%;
+    left: 38%;
+    width: 25%;
+    height: 70%;
+}
+
+.add-on .horizontal-img {
+    position: relative;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+}
+
+/*Media queries------------------------------------------*/
+@media only screen and (max-width: 850px){
+    .container h1 {
+        font-size: 3rem;
+    }
+    .container ul img {
+        height: 100px;
+    }
+    .add-on .horizontal-img {
+        top: 25%;
+        left: 5%;
+        width: 90%;
+        height: 50%;
+    }
+    .add-on .vertical-img {
+        top: 10%;
+        left: 10%;
+        height: 80%;
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Audio Context</title>
+    </head>
+    <body>
+        <h1>Sounds</h1>
+        <button>Play</button>
+        <script>
+            let playButton=document.querySelector('button');
+            playButton.addEventListener('click',function(el){
+                el.preventDefault();
+                let ac=new AudioContext();
+                let o=ac.createOscillator();
+                let g=ac.createGain();
+                o.type="sine"; 
+                o.frequency.value='528';
+                o.connect(g);
+                g.connect(ac.destination);
+                g.gain.exponentialRampToValueAtTime(0.000000001,ac.currentTime + 3);
+                o.start(0); 
+                setTimeout(function(){
+                    o.stop();
+                    ac.close();
+                },5000);
+            });
+        </script>
+    </body>
+</html>

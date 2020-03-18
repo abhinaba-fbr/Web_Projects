@@ -1,0 +1,142 @@
+/*Entire Container-------------------------------------------*/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 50px 0 50px;
+}
+
+/*Buttons-------------------------------------------------------*/
+#right-btn {
+    position: relative;
+    background: rgb(240,240,240);
+    border: none;
+    font-size: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-self: center;
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+#right-btn:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid gray;
+    transform: rotate(-45deg); 
+    top: 30px;
+    left: 25px;
+    transition: all 0.2s ease-in;
+}
+#right-btn:hover {
+    background: rgb(200,200,200);
+}
+#right-btn:hover:before {
+    border-bottom: 3px solid rgb(30,30,30);
+    border-right: 3px solid rgb(30,30,30);
+}
+
+#left-btn {
+    position: relative;
+    background: rgb(240,240,240);
+    border: none;
+    font-size: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-self: center;
+    outline: none;
+    transition: all 0.2s ease-in;
+    z-index: 1;
+}
+#left-btn:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+    transform: rotate(45deg); 
+    top: 30px;
+    left: 32px;
+    transition: all 0.2s ease-in;
+}
+#left-btn:hover {
+    background: rgb(200,200,200);
+}
+#left-btn:hover:before {
+    border-bottom: 3px solid rgb(30,30,30);
+    border-left: 3px solid rgb(30,30,30);
+}
+
+
+/*slider-------------------------------------------------------------*/
+ul {
+    list-style: none;
+    position: relative;
+    background: darkblue;
+    width: 70%;
+    height: 60vh;
+    justify-self: center;
+    display: flex;
+    overflow: none;
+}
+
+ul li {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+/*Animation------------------------------------------------------------*/
+@keyframes slideOutLeft{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -70vw;
+    }
+}
+
+@keyframes slideInLeft{
+    0%{
+        left: 70vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        left: -70vw;
+    }
+    100%{
+        left: 0vw;
+    }
+}
+
+
+
+.animationInLeft{
+    animation: slideInLeft 0.3s;
+}
+.animationInRight{
+    animation: slideInRight 0.3s;
+}
+.animationOut{
+    animation: slideOutLeft 0.3s;
+}
+
+

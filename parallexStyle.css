@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parallex1 {
+    background: url("img/black-pencils-and-design-word-6444.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallex2 {
+    background: url("img/blur-business-coffee-commerce-273222.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div h1 {
+    color: white;
+}
+
+.section {
+    background: rgb(200,230,150);
+    margin: 0;
+    padding: 100px 200px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}

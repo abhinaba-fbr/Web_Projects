@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(70,70,240);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/*SVG paths-----------------------------------------------------------------*/
+#Layer_1 {
+    fill: transparent;
+    animation: fill-animation 0.5s ease-in 5.3s forwards;
+}
+
+.container svg path:nth-child(1) {
+    stroke-dasharray: 1628.44px;
+    stroke-dashoffset: 1628.44px;
+    animation: animation-svg 1.5s ease-in 1.7s forwards;
+}
+
+.container svg path:nth-child(2) {
+    stroke-dasharray: 1784.72px;
+    stroke-dashoffset: 1784.72px;
+    animation: animation-svg 1.5s ease-in 2.4s forwards;
+}
+
+.container svg path:nth-child(3) {
+    stroke-dasharray: 866.06px;
+    stroke-dashoffset: 866.06px;
+    animation: animation-svg 1.5s ease-in 3.1s forwards;
+}
+
+.container svg path:nth-child(4) {
+    stroke-dasharray: 866.05px;
+    stroke-dashoffset: 866.05px;
+    animation: animation-svg 1.5s ease-in 3.8s forwards;
+}
+
+/*Animations---------------------------------------------------------------*/
+@keyframes animation-svg {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-animation {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black; 
+    }
+}
+
